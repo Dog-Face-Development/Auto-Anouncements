@@ -40,7 +40,7 @@ def main():
     s = smtplib.SMTP("localhost")
     s.sendmail(sendaddress, [receiveaddress], msg.as_string())
 
-    print('Message sent successfully on', DATE, '!')
+    print("Message sent successfully on", DATE, "!")
 
 
 if __name__ == "__main__":
