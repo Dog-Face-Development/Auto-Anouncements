@@ -42,6 +42,6 @@ def main():
 
     print('Message sent successfully on', DATE, '!')
 
+
 if __name__ == "__main__":
     main()
-    
