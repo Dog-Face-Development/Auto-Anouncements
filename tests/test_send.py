@@ -29,8 +29,7 @@ def test_main(mocker):
     mock_input.assert_any_call("RECIPIENT's email address:")
     mock_smtp.assert_called_once_with("localhost")
     mock_smtp_instance.sendmail.assert_called_once_with(
-        "sender@example.com",
-        ["receiver@example.com"]
+        "sender@example.com", ["receiver@example.com"]
     )
     date_today = str(datetime.datetime.today())
     mock_print.assert_called_with("Message sent successfully on", date_today, "!")
